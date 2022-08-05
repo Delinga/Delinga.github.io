@@ -10,18 +10,14 @@
     /* Main Theme*/
     --first-color: #ffffff;
     --second-color: #6755b4;
-    --third-color: rgb(255, 94, 0);
+    --third-color: rgb(214, 106, 44);
 
-    --hover-color: #614fd0;
+    --hover-color: #fc0000;
 
     /* Background Colors */
-    --body-bg-color: rgb(40, 40, 40);
+    --body-bg-color: rgb(41, 41, 41);
     --card-bg-color: rgb(26, 26, 26);
-    --modal-bg-color: #fff;
-    --bg-transparent-color: rgba(0, 0, 0, 0.1);
-    --transparent-color-01: rgba(0, 0, 0, 0.1);
-    --transparent-color-02: rgba(106, 89, 209, 0.1);
-    --line-color: #d7d7d7;
+    --line-color: #ff711f;
 
     /* Box Shadow */
     --box-shadow: 0px 0px 7px 10px rgba(255, 94, 0, 0.116);
@@ -35,16 +31,12 @@
     font-family: 'Poppins', sans-serif;
 }
 
-h2{
-    font-weight: 300;
-}
-
 html{
     scroll-behavior: smooth;
 }
 
 body{
-    margin: 0 0 0 0;
+    margin: 0;
     transition: .5s ease;
     background-color: var(--body-bg-color);
     color: var(--first-color);
@@ -134,10 +126,61 @@ header.sticky .nav-bar{
     align-items: center;
 }
 
+.sectionHeader{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.line{
+    flex: 1 1;
+    background-color: var(--line-color);
+    height: 1px;
+}
+
+
 /* _______________About__________________________*/
-.about{
-    
-    background: #d7d7d7;
+.aboutSection{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 30px;
+}
+
+
+.aboutSection .sectionHeader h2{    
+    margin-left: 40px;
+    color: var(--third-color);
+}
+
+.aboutContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    gap: 50px;
+}
+
+.aboutContainer .textField{
+    padding: 30px;
+    background-color: rgb(32, 32, 32);
+    border-radius: 10px;
+    flex-grow: 2;
+}
+
+.aboutSection p{
+    font-size: var(--normal-font-size);
+    font-weight: 300;
+}
+
+.aboutContainer .myimages img{
+    width: 400px;
+    height: auto;
+    border-radius: 5px;
 }
 
 /* _______________Skills & Tools_________________*/
@@ -152,22 +195,11 @@ header.sticky .nav-bar{
     padding: 30px;
 }
 
-.skillSection .sectionHeader{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
 .skillSection .sectionHeader h2{
-    margin-right: 20px;
+    margin-right: 40px;
     color: rgb(214, 106, 44);
 }
 
-.skillSection .line{
-    flex: 1 1;
-    background-color: var(--third-color);
-    height: 1px;
-}
 .skCardGrid{
     display: flex;
     flex-direction: row;
@@ -240,7 +272,66 @@ header.sticky .nav-bar{
 
 /* _______________Footer | Contact_______________*/
 
+
+.contactSection{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 30px;
+}
+
+.contactSection .sectionHeader h2{
+    margin-right: 40px;
+    margin-left: 40px;
+    color: var(--third-color);
+}
+
+.contactSection .line{
+    flex: 1 1;
+    background-color: var(--line-color);
+    height: 1px;
+}
+
+.contactSection .contactDetail{
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.contactDetail p{
+    color: #978878;
+    font-size: var(--small-font-size);
+    margin-bottom: 15px;
+}
+
+.contactDetail h4 a{
+    color: #f8ca9d;
+    font-size: 25;
+}
+
+.contactDetail h4 a:hover{
+    color: var(--hover-color);
+    font-size: 26;
+    transition-duration: .2;
+}
+
+.contactSection .endline{
+    flex: 1 1;
+    background-color: var(--line-color);
+    height: 1px;
+    margin-top: 100px;
+}
+
 footer{
-    height: 200px;
-    background-color: black;
+    margin-bottom: 60px;
+}
+
+footer p{
+    text-align: center;
+    font-size: smaller;
+    font-weight: 300;
+    color: rgb(145, 139, 139);
 }

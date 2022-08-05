@@ -8,29 +8,41 @@
     </head>
     <body>
         <div class="mainContainer">
-            <!-- Header Start -->
+            <!-- Header & Navbar -->
             <header>
                 <div class="nav-bar">
                     <a href="#" class="logo">Floyd Hortmanns</a>
                     <div class="navigation">
                         <div class="nav-items">
                             <a href="#home">Home</a>
-                            <a href="#aboutus">About Me</a>
-                            <a href="#skillsTools">Skills & Tools</a>
+                            <a href="#aboutme">About Me</a>
+                            <a href="#skills">Skills & Tools</a>
                             <a href="#portfolio">Portfolio</a>
                             <a href="#contact">Contact</a>
                         </div>
                     </div>
                 </div>
             </header>
-            <!-- Header End -->
 
             <!-- Home Section -->
             <section class="home flex-center" id="home">
             </section>
 
-            <!-- About Me Section -->
-            <section class="aboutSection" id="about">
+            <!-- ____________ About Me Section ____________ -->
+
+            <section class="aboutSection" id="aboutme">
+                <div class="sectionHeader">
+                    <div class="line"></div>
+                    <h2>Über mich</h2>
+                </div>
+                <div class="aboutContainer">
+                    <div class="myimages">
+                        <img src="images/bike1.jpg">
+                    </div>
+                    <div class="textField">
+                        <p> </p>
+                    </div>
+                </div>
             </section>
 
             <!-- Skillset Section -->
@@ -40,6 +52,9 @@
                     <div class="line"></div>
                 </div>        
                 <div class="skCardGrid">
+
+                    <!-- _________Skills Frontend Card__________ -->
+                    
                     <div class="skCardWrapper">
                         <h2>Front-End</h2>
                         <div class="skCard">
@@ -57,6 +72,9 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- _________Skills Backend Card__________ -->
+
                     <div class="skCardWrapper">
                         <h2>Back-End</h2>
                         <div class="skCard">
@@ -72,8 +90,15 @@
                                 <img src="/icons/icon_js.png">
                                 <h3>JavaScript</h3>
                             </div>
+                            <div class="skCardItem">
+                                <img src="/icons/icon_mysql.png">
+                                <h3>MySQL</h3>
+                            </div>
                         </div>
                     </div>
+
+                    <!-- _________Skills Misc Card__________ -->
+
                     <div class="skCardWrapper">
                         <h2>Misc.</h2>
                         <div class="skCard">
@@ -97,15 +122,36 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- _________Skills Languages Card__________ -->
+
                 <div class="languageSkillsWrapper">
                     <span>Ich spreche&nbsp;<strong>Deutsch&ensp;</strong> <img src="/icons/ger.svg"></span>
                     <span>I speak&nbsp;<strong>English&ensp;</strong><img src="/icons/united-kingdom.svg"></span>
                 </div>
             </section>
-        </div>
-        <footer>
 
+            <!-- _________Contact Section __________ -->
+            <section class="contactSection" id="contact">
+                <div class="sectionHeader">
+                    <div class="line"></div>
+                    <h2>Kontakt</h2>
+                    <div class="line"></div>
+                </div>
+                <div class="contactDetail">
+                    <p>Schreiben sie mir eine E-mail an:</p>
+                    <h4><a href= "mailto:floyd.hortmanns@gmx.de">floyd.hortmanns@gmx.de</a></h4>
+                </div>
+                <div>
+                    <div class="endline"></div>
+                </div>
+            </section>
+        </div>
+
+        <footer>
+            <p>Floyd Hortmanns - 2022</p>
         </footer>
+
         <script src="main.js"></script>
     </body>
 </html>
